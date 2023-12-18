@@ -1,0 +1,20 @@
+
+Equation of the Fixed Effects Panel Data Model:
+
+GDP_{it} = β_0 + β_1 × FixedBroadbandPenetration_{it} + β_2 × MobileBroadbandPenetration_{it} 
+           + Σ(γ_j × CountryDummy_{j,it}) 
+           + Σ(δ_{j1} × FixedBroadbandPenetration_{it} × CountryDummy_{j,it}) 
+           + Σ(δ_{j2} × MobileBroadbandPenetration_{it} × CountryDummy_{j,it}) 
+           + α_i + ε_{it}
+
+Where:
+- GDP_{it} is the Gross Domestic Product for country i in year t.
+- FixedBroadbandPenetration_{it} and MobileBroadbandPenetration_{it} are the fixed and mobile broadband penetration rates, respectively, for country i in year t.
+- β_0 is the intercept.
+- β_1 and β_2 are the coefficients for fixed and mobile broadband penetration.
+- γ_j represents the coefficients for the country-specific dummy variables (CountryDummy_{j,it}), accounting for the unique effects of each country.
+- δ_{j1} and δ_{j2} are the coefficients for the interaction terms between broadband penetration rates and country-specific dummies, indicating how the impact of broadband penetration varies by country.
+- α_i is the unobserved country-specific effect.
+- ε_{it} is the error term.
+
+This equation reflects the complex relationships explored in the analysis, including both the direct effects of broadband penetration on GDP and the country-specific variations in these effects.
